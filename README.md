@@ -45,5 +45,6 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
-
-```kubeadm init --pod-network-cidr=172.16.0.0/12 --control-plane-endpoint "192.168.1.160:6443" --cri-socket=/var/run/crio/crio.sock  --upload-certs --v=7```
+```
+kubeadm init --pod-network-cidr=172.16.0.0/12 --control-plane-endpoint "192.168.1.160:6443" --cri-socket=/var/run/crio/crio.sock  --upload-certs --v=7
+```
